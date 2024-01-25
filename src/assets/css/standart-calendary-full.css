@@ -1,0 +1,218 @@
+/* Estilos de calendario */
+/* Estilos para el encabezado personalizado */
+.custom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none !important;
+    font-family: "Futura Md BT", sans-serif !important;
+    /* Otras propiedades de estilo, si es necesario */
+  }
+  
+  /* Cambia el color de fondo de los eventos */
+  .fc-event {
+    background-color: transparent;
+    border: none;
+    text-decoration: none !important;
+    font-family: "Futura Md BT", sans-serif !important;
+  }
+  
+  /* Cambia el color de fondo del día actual en la vista de mes */
+  .fc-dayGridMonth .fc-day-today {
+    background-color: #d3d3d3;
+    text-decoration: none !important;
+    font-family: "Futura Md BT", sans-serif !important;
+  }
+  
+  .custom-event{
+    font-size: 12px;
+    border: 1px solid #798774;
+    overflow: hidden;
+    margin: 1px;
+    border-radius: 3px;
+    color: black;
+    padding: 3px 5px !important;
+    text-decoration: none !important;
+    text-align: center;
+    font-family: "Futura Md BT", sans-serif !important;
+  }
+
+  .calendary-color-yellow{
+    color: #8e5e01;
+    background-color: #FFF511;
+    border: 1px solid #8D5D00;
+    font-weight: 700;
+  }
+  
+  .calendary-color-orange{
+    color: #523100;
+    background-color: #f0a32f;
+    border: 1px solid #523100;
+    font-weight: 700;
+  }
+  
+  .calendary-color-red{
+    color: white !important;
+    background-color: #EF0000;
+    border: 1px solid #651900;
+    font-weight: 700;
+  }
+  
+  .calendary-color-green{
+    color: #486500;
+    background-color: #65F621;
+    border: 1px solid #486500;
+    font-weight: 700;
+  }
+
+  .calendary-color-gray{
+    color: #495057;
+    background-color: #B5B5B5;
+    border: 1px solid #495057;
+    font-weight: 700;
+  }
+  
+  /* Personaliza la altura de las celdas de día en la vista de mes */
+  .fc-dayGridMonth-view .fc-day {
+    height: 175px;
+    max-height: 175px;
+    border: 1px solid #b4b6c6;
+    text-decoration: none !important;
+    font-family: "Futura Md BT", sans-serif !important;
+  }
+  
+  /* Usando una clase específica para el encabezado de los días de la semana */
+  .fc-dayGridMonth-view .fc-col-header-cell {
+    padding: 10px;
+    height: 30px;
+    color: black !important;
+    background-color: #e1e3ed;
+    border: 1px solid #b4b6c6;
+    font-weight: bold;
+    text-decoration: none !important;
+    font-family: "Futura Md BT", sans-serif !important;
+    /* Otras propiedades de estilo, si es necesario */
+  }
+  
+  /* Estilo personalizado para el contenedor del encabezado (que incluye headerToolbar) */
+  .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 0px;
+    background: linear-gradient(to right, #ED592A,#373181); /* Cambia el color de fondo según tus preferencias */
+    border-bottom: 1px solid #ccc; /* Agrega un borde inferior si lo deseas */
+    padding: 10px; /* Ajusta el relleno según sea necesario */
+    color: white; /* Color del texto dentro de headerToolbar */
+    font-weight: bold; /* Estilo de fuente, si es necesario */
+    text-decoration: none !important;
+    font-family: "Futura Md BT", sans-serif !important;
+    /* Otras propiedades de estilo, si es necesario */
+  }
+  
+  /* Quitar margin-button al header toolbar */
+  .fc-header-toolbar.fc-toolbar.fc-toolbar-ltr{
+    margin-bottom: 0px;
+    text-decoration: none !important;
+    font-family: "Futura Md BT", sans-serif !important;
+  }
+  
+  /* Estilo personalizado para los botones de mes, semana y día en headerToolbar */
+  .fc-toolbar.fc-header-toolbar .fc-button {
+    background-color: #ffffff; /* Cambia el color de fondo según tus preferencias */
+    color: black; /* Cambia el color del texto según tus preferencias */
+    border: none; /* Elimina el borde si lo deseas */
+    padding: 5px 10px; /* Ajusta el relleno según*/
+    text-decoration: none !important;
+    font-family: "Futura Md BT", sans-serif !important;
+  }
+  
+  /* Estilo personalizado para los botones de mes, semana y día en headerToolbar */
+  .fc-toolbar.fc-header-toolbar .fc-button:hover {
+    background-color: #d3d3d3; /* Cambia el color de fondo según tus preferencias */
+    color: black; /* Cambia el color del texto según tus preferencias */
+    border: none; /* Elimina el borde si lo deseas */
+    padding: 5px 10px; /* Ajusta el relleno según*/
+    text-decoration: none !important;
+    font-family: "Futura Md BT", sans-serif !important;
+  }
+  
+  /* Estilo personalizado para los botones de mes, semana y día en headerToolbar */
+  .fc-toolbar.fc-header-toolbar .fc-button-active {
+    background-color: #d3d3d3; /* Cambia el color de fondo según tus preferencias */
+    color: black; /* Cambia el color del texto según tus preferencias */
+    border: none; /* Elimina el borde si lo deseas */
+    padding: 5px 10px; /* Ajusta el relleno según*/
+    text-decoration: none !important;
+    font-family: "Futura Md BT", sans-serif !important;
+  }
+  
+  .fc .fc-toolbar .fc-button:enabled:hover{
+    background-color: #d3d3d3; /* Cambia el color de fondo según tus preferencias */
+    color: black; /* Cambia el color del texto según tus preferencias */
+    border: none; /* Elimina el borde si lo deseas */
+    padding: 5px 10px; /* Ajusta el relleno según*/
+    text-decoration: none !important;
+    font-family: "Futura Md BT", sans-serif !important;
+  }
+  
+  /* Remueve el color */
+  .fc .fc-view-harness .fc-event, .fc .fc-view-harness .fc-event-main {
+    background: transparent;
+    border: 1px solid transparent;
+    color: black;
+    font-family: "Futura Md BT", sans-serif !important;
+    text-decoration: none !important;
+  }
+  
+  .fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active{
+    background-color: #d3d3d3; /* Cambia el color de fondo según tus preferencias */
+    color: black; /* Cambia el color del texto según tus preferencias */
+    border: none; /* Elimina el borde si lo deseas */
+    padding: 5px 10px; /* Ajusta el relleno según*/
+    text-decoration: none !important;
+    font-family: "Futura Md BT", sans-serif !important;
+  }
+  
+  .fc .fc-toolbar .fc-button.fc-dayGridMonth-button.fc-button-active, .fc .fc-toolbar .fc-button.fc-timeGridWeek-button.fc-button-active, .fc .fc-toolbar .fc-button.fc-timeGridDay-button.fc-button-active{
+    background-color: #d3d3d3; /* Cambia el color de fondo según tus preferencias */
+    color: black; /* Cambia el color del texto según tus preferencias */
+    border: none; /* Elimina el borde si lo deseas */
+    padding: 5px 10px; /* Ajusta el relleno según*/
+    text-decoration: none !important;
+    font-family: "Futura Md BT", sans-serif !important;
+  }
+  
+  .fc .fc-toolbar .fc-button.fc-dayGridMonth-button.fc-button-active:hover, .fc .fc-toolbar .fc-button.fc-timeGridWeek-button.fc-button-active:hover, .fc .fc-toolbar .fc-button.fc-timeGridDay-button.fc-button-active:hover{
+    background-color: #d3d3d3; /* Cambia el color de fondo según tus preferencias */
+    color: black; /* Cambia el color del texto según tus preferencias */
+    border: none; /* Elimina el borde si lo deseas */
+    padding: 5px 10px; /* Ajusta el relleno según*/
+    text-decoration: none !important;
+    font-family: "Futura Md BT", sans-serif !important;
+  }
+  
+
+  .fc .fc-daygrid-day.fc-day-today{
+    font-family: "Futura Md BT", sans-serif !important;
+    background-color: #F7F7F8;
+  }
+
+
+  .fc-scroller.fc-scroller-liquid-absolute{
+    font-family: "Futura Md BT", sans-serif !important;
+    overflow: hidden !important;
+  }
+  
+  .fc-scroller{
+    font-family: "Futura Md BT", sans-serif !important;
+    overflow: hidden !important;
+  }
+  
+  a{
+    font-family: "Futura Md BT", sans-serif !important;
+    color: black;
+    text-decoration: none !important;
+  }
+  

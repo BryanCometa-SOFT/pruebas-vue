@@ -1,0 +1,424 @@
+#ofBar {
+    display: none !important;
+    }
+.navbar {
+    margin-bottom: 0px !important;
+    background-color: #30294D;
+    height:78px;
+}
+.header_debtor{
+    background-color:#ffffff;
+    position: fixed;
+    margin-top: 176px;
+    width: 100%;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+#header_calendar {
+    position: fixed;
+    margin-top: -76.6px;
+    width: 100%;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+}
+.fixed-search{
+    background-color: #474342;
+    color: #ffffff;
+    position: fixed;
+    top: 70px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+}
+.fixed-move{
+    background-color: #ffffff;
+    /* position: fixed; */
+    margin-top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+}
+.header-user{
+    position: fixed;
+    margin-top: 137px;
+    width: 100%;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+}
+.header-icons{
+    position: fixed;
+    margin-top: 15px;
+    width: 100%;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    padding-bottom: 1px;
+}
+.separator{
+    width: 100%;
+    height: 285px;
+}
+.separator-crud{
+    width: 100%;
+    height: 74px;
+}
+.nav-search-bar{
+    margin-top: 11px;
+}
+.nav-user-descrip{
+    margin-top: 5px;
+}
+.nav-btn-control{
+    margin-top: -16px;
+    margin-left: 9%;
+}
+.btn-gestiones{
+    margin-top: 0px;
+}
+.btn-title{
+    background-color: yellow;
+    color: #333333;
+}
+.navbar-search{
+    position: inherit;
+    margin-top: 77px;
+}
+
+.navbar-search-collect{
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    margin-top: 77px;
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+
+/*Vertical nav*/
+.vertical-nav {
+    background-color: #dee2e6;
+    min-width: 40%;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+  }
+
+  .page-content {
+    width: calc(100% - 40%);
+    margin-left: 40%;
+    transition: all 0.4s;
+  }
+
+  #sidebar.active {
+    margin-left: -40%;
+  }
+
+  #content.active {
+    width: 100%;
+    margin: 0;
+  }
+
+  .content_vertical{
+    margin-top: 329px;
+    background-color: #ffffff;
+    padding: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+  @media (max-width: 768px) {
+    #sidebar {
+      margin-left: -40%;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      margin-left: 40%;
+      width: calc(100% - 40%);
+    }
+  }
+
+  /*Phone styles*/
+  .row-phone {
+    margin: 0 auto;
+    width: 280px;
+    clear: both;
+    text-align: center;
+    font-family: 'Exo';
+  }
+
+  .digit,
+  .dig {
+    float: left;
+    padding: 16px 36px;
+    width: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: aliceblue;
+    height: 44px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    transition: background-color 0.5s ease;
+  }
+
+  .sub {
+    font-size: 0.8rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -9px;
+  }
+
+  .container-phone {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+  }
+
+  #output {
+      /* border-style: solid;
+      border-width: 1px;
+      border-color: #333333;
+      font-family: "Exo";
+      font-size: 20px;
+      font-weight: bold;
+      color: #1976d2; */
+      margin-left: 0px;
+      margin-bottom: 8px;
+  }
+
+  #call {
+    cursor: pointer;
+  }
+  #callback {
+    display: inline-block;
+    background-color:yellow;
+    padding: 18px 18px;
+    margin: 0px;
+    color: black;
+    border-radius: 14px;
+    float: inline-start;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  #callend {
+    display: inline-block;
+    background-color: red;
+    padding: 17px 15px;
+    color: white;
+    border-radius: 14px;
+    float: inline-start;
+    cursor: pointer;
+    margin-left: 17px;
+  }
+
+  .botrow {
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    font-family: 'Exo';
+  }
+
+  .digit:hover{
+    background-color: #f96332;
+    color: white;
+    font-weight: bold;
+  }
+  .digit:active,
+  .dig:active {
+    background-color: #e6e6e6;
+  }
+
+  /* #call:hover {
+    background-color: #81c784;
+  } */
+  #callback:hover {
+    background-color: #81c784;
+  }
+  #callend:hover {
+    background-color: #81c784;
+  }
+
+  .dig {
+    float: left;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .separator_managment {
+    width: 100%;
+    height: 250px;
+  }
+  .separator_managment_top {
+    width: 100%;
+    height: 50px;
+  }
+  .separator_search{
+    height: 34px;
+    margin-bottom: -59px;
+    width: 100%;
+  }
+  .arrow-back{
+    margin-top: 6px;
+    margin-left: -7px;
+  }
+  .warning_two{
+    background-color: yellow;
+    color: black;
+    font-size: 14px;
+    border-radius: 0.1875rem;
+    padding: 5px 15px;
+  }
+
+  /* Clase para centrar botones de certificacion,
+     condonación y paz y salvos */
+  .nav-btn-control-ccp{
+    margin-top: 30px;
+    margin-left: 33%;
+  }
+
+  .nav_buttons{
+    height:60px;
+  }
+
+  .client_title{
+    color: #ffffff;
+    font-style: italic;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  .badges-info{
+    margin-right: 20px;
+  }
+
+  .icons-red{
+
+    font-size:24px;
+    color:red;
+  }
+
+  .icons-green{
+
+    font-size:24px;
+    color:#28a745;;
+  }
+
+  .yellow-form{
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
+  }
+  .green-form{
+    background-color: green;
+    font-weight: bold;
+    color: white;
+  }
+  .menu_opciones_detail{
+    margin-top: 0px;
+  }
+  .modal-backdrop
+  {
+      opacity:0.1 !important;
+  }
+
+  .separator_wizard{
+    margin-top: 30px;
+  }
+  .icon-aproveed{
+    color: green;
+    cursor: pointer;
+  }
+  .icon-deny{
+    color: red;
+    cursor: pointer;
+  }
+
+  /*Estilos para el calendario*/
+    .fc-direction-ltr{
+        background-color: #30294D;
+        color: #ffffff;
+    }
+    .fc .fc-toolbar.fc-header-toolbar{
+        padding-top: 8px;
+    }
+    .fc .fc-daygrid-day-top{
+        color: #ffffff;
+        font-size: 16px;
+    }
+    .table-bordered thead td, .table-bordered thead th{
+        background-color: #f96332;
+        color: #ffffff;
+    }
+    .fc-h-event .fc-event-title-container{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .fc .fc-toolbar-title{
+        text-transform: uppercase;
+    }
+    .table-bordered td, .table-bordered th{
+        border: 1px solid #dee2e64f;
+    }
+
+    /* Estilos para datatable */
+
+    table.dataTable > thead .sorting_desc::after, table.dataTable > thead .sorting_asc_disabled::before, table.dataTable > thead .sorting_asc_disabled::after, table.dataTable > thead .sorting_desc_disabled::before, table.dataTable > thead .sorting_desc_disabled::after{
+      color:green;
+      cursor: pointer;
+    }
+    table.dataTable > thead .sorting::before, table.dataTable > thead .sorting::after, table.dataTable > thead .sorting_asc::before, table.dataTable > thead .sorting_asc::after, table.dataTable > thead .sorting_desc::before, table.dataTable > thead .sorting_desc::after, table.dataTable > thead .sorting_asc_disabled::before, table.dataTable > thead .sorting_asc_disabled::after, table.dataTable > thead .sorting_desc_disabled::before, table.dataTable > thead .sorting_desc_disabled::after{
+      bottom: 1em;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    table.dataTable > thead > tr > th:not(.sorting_disabled), table.dataTable > thead > tr > td:not(.sorting_disabled){
+      line-height: 38px;
+    }
+    table.table thead th.sorting::after, table.table thead th.sorting_asc::after, table.table thead th.sorting_desc::after {
+      top:0px;
+    }
+    table.dataTable > thead .sorting::before, table.dataTable > thead .sorting::after, table.dataTable > thead .sorting_asc::before, table.dataTable > thead .sorting_asc::after, table.dataTable > thead .sorting_desc::before, table.dataTable > thead .sorting_desc::after, table.dataTable > thead .sorting_asc_disabled::before, table.dataTable > thead .sorting_asc_disabled::after, table.dataTable > thead .sorting_desc_disabled::before, table.dataTable > thead .sorting_desc_disabled::after {
+     color:green;
+     cursor: pointer;
+    }
+
+    .btn-edit-valid{
+        cursor: pointer;
+    }
+
+    .table.dataTable tr.dtrg-group td{
+        background-color: #fde300;
+    }
+
+    .table.dataTable tr.dtrg-group th{
+      background-color: #fde300;
+  }
+
+
+    .table .dataTable tbody tr .dtrg-group th{
+      background-color: #fde300;
+    }

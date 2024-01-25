@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="163.689mm" height="163.689mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 957.68 957.68"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#66BB00}
+    .fil0 {fill:#77DD00}
+    .fil2 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <circle class="fil0" cx="478.84" cy="478.84" r="478.84"/>
+  <path class="fil1" d="M478.84 0c264.46,0 478.84,214.38 478.84,478.84 0,264.46 -214.38,478.84 -478.84,478.84l0 -957.68z"/>
+  <polygon class="fil2" points="673.69,282.41 750.64,359.36 505.69,604.31 428.74,681.26 351.79,604.31 226.55,479.07 303.5,402.12 428.74,527.36 "/>
+ </g>
+</svg>

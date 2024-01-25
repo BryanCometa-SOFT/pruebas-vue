@@ -1,0 +1,92 @@
+.mail.contact{
+    padding: 4%;
+    height: 450px;
+}
+.mail.col-md-3{
+    background: #d8d0cd;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+/** Icono **/
+.mail.contact-info{
+    margin-top:10%;
+}
+.mail.contact-info img{
+    margin-bottom: 15%;
+}
+.mail.contact-info h2{
+    margin-bottom: 10%;
+}
+/* Fondo blanco */
+.mail.col-md-9{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.10rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.mail.col-sm-10{
+    margin-left:50px;
+}
+.mail.contact-form label{
+    margin-left: 50px;
+
+}
+.mail.contact-form button{
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.mail.contact-form button:focus{
+    box-shadow:none;
+}
+.mail.ancho{
+    width: 280%;
+}
+
+/* PC */
+@media only screen and (max-width: 1024px) {
+    .mail.ancho{
+        width: 280%;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 992px) {
+    .mail.ancho{
+        width: 100%;
+    }
+
+    .mail.contact-info {
+        display: none;
+    }
+
+    .mail.contact-info img {
+        display: none;
+    }
+
+    .mail.contact-info h2 {
+        display: none;
+    }
+
+}
+/* Telefono 768 */
+@media screen and (max-width: 600px) {
+    .mail.ancho {
+        width: 50%;
+    }
+
+    .mail.contact-info {
+        display: none;
+    }
+
+    .mail.contact-info img {
+        display: none;
+    }
+
+    .mail.contact-info h2 {
+        display: none;
+    }
+}
+/* Tooltipe */
