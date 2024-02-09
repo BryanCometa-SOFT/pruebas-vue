@@ -2,6 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 d-flex justify-content-between">
+                <img class="animated-image4" src="@/assets/profile.png" alt="" srcset="">
                 <img class="animated-image" src="@/assets/profile.png" alt="" srcset="">
                 <img class="animated-image2" src="@/assets/profile.png" alt="" srcset="">
                 <img class="animated-image3" src="@/assets/profile.png" alt="" srcset="">
@@ -71,6 +72,24 @@
       transform: translateY(-20px);
     }
   }
+
+   .animated-image4 {
+    width: 100px; /* Ajusta el tamaño de tu imagen según sea necesario */
+    height: 100px;
+    animation: rotateAndMoveUp4 0.5s infinite alternate;
+  }
+  
+  @keyframes rotateAndMoveUp4 {
+    
+    0% {
+      transform: translateY(0) rotateY(0deg);
+    }
+    100% {
+      transform: translateY(-20px) rotateY(3600deg);
+    }
+    
+  }
+
 
   .animated-image2 {
     width: 100px; /* Ajusta el tamaño de tu imagen según sea necesario */

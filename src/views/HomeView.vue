@@ -49,6 +49,12 @@
 
 
     </div>
+    
+    <Accordion >
+      <AccordionTab class="custom-accordion-header" header="Header I">
+        Content
+      </AccordionTab>
+    </Accordion>
 
 
     <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">

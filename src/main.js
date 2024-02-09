@@ -33,6 +33,7 @@ import OverlayPanel from "primevue/overlaypanel";
 import Fieldset from "primevue/fieldset";
 import MultiSelect from "primevue/multiselect";
 import DataView from 'primevue/dataview';
+import Accordion from 'primevue/accordion';
 
 Vue.config.productionTip = false
 
@@ -56,6 +57,7 @@ Vue.component("Toolbar", Toolbar);
 Vue.component("Checkbox", Checkbox);
 Vue.component("DataView", DataView);
 Vue.component("Steps", Steps);
+Vue.component("Accordion", Accordion);
 Vue.component("AccordionTab", AccordionTab);
 Vue.component("InputSwitch", InputSwitch);
 
