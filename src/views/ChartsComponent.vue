@@ -92,7 +92,9 @@ export default {
         },
         options: {
           cutoutPercentage: this.percentageLine, // Ajusta este valor según tus necesidades
-          animation: 2000,
+          animation: {
+            duration: 0, // Desactiva las animaciones estableciendo la duración en 0
+          },
           legend: {
             display: this.showLabel,
             labels: {

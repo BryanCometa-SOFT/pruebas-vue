@@ -4,7 +4,7 @@
       <div class="col-8" style="border-right: 15px solid white;">
         <div class="row container-grafic-line">
           <div class="col-2 container-cards-chart" style="border-right: 1px solid white">
-            <h6 class="mb-2 text-white">Tareas Ejecutadas</h6>
+            <h6 class="mb-2 text-white">Tareas Ejecutadas2</h6>
             <h5 class="mb-2 text-container-cards-chart text-white">350</h5>
             <h6 class="text-white">Ejecutadas hoy</h6>
           </div>
@@ -79,22 +79,6 @@
     </div>
 
 
-
-    <div class="row">
-      <div class="col-12">
-        <div class="container-candle">
-          <ChartsComponent
-            :headers="chartLineHeaders"
-            :data="chartLineData"
-            type="horizontalBar"
-          />
-        </div>
-
-        <div class="container-candle mt-3">
-          <ChartsComponent :headers="chartHeaders2" :data="chartData2" type="line" />
-        </div>
-      </div>
-    </div>
 
     <!-- <div class="row">
       <div class="col-4 bg-gray-chart">
@@ -206,25 +190,48 @@ export default {
         
       ],
       chartData2: [
-        {
-          label: "Ejecutadas",
-          backgroundColor: "transparent", // Asigna colores según el orden de las etiquetas
-          borderColor: "#65F621",
-          pointBackgroundColor: "white", // Color de los puntos si los hay
-          pointBorderColor: "white", // Color del borde de los puntos si los hay
-          data: [0, 60, 70, 50, 60, 60,40,40,40,20,10],
-          barPercentage: 0.5, // Ajusta el ancho de las barras (0.5 significa la mitad del espacio disponible)
-        },
-
-        {
-          label: "Canceladas",
-          backgroundColor: "transparent", // Asigna colores según el orden de las etiquetas
-          borderColor: "#EF0000",
-          pointBackgroundColor: "white", // Color de los puntos si los hay
-          pointBorderColor: "white", // Color del borde de los puntos si los hay
-          data: [10, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0],
-          barPercentage: 0.5, // Ajusta el ancho de las barras (0.5 significa la mitad del espacio disponible)
-        }
+          {
+              "label": "Ejecutadas",
+              "backgroundColor": "transparent",
+              "borderColor": "#65F621",
+              "pointBackgroundColor": "white",
+              "pointBorderColor": "white",
+              "data": [
+                  0,
+                  0,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0
+              ],
+              "barPercentage": 0.5
+          },
+          {
+              "label": "Canceladas",
+              "backgroundColor": "transparent",
+              "borderColor": "#EF0000",
+              "pointBackgroundColor": "white",
+              "pointBorderColor": "white",
+              "data": [
+                  0,
+                  0,
+                  3,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+              ],
+              "barPercentage": 0.5
+          }
       ],
 
       chartHeaders3: ["Tierra", "Vigente","Premium","Master"],

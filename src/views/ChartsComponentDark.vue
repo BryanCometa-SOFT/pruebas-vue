@@ -36,7 +36,7 @@ export default {
     animation: {
       default: {
         duration: 2000, // Duración de la animación en milisegundos
-        easing: "easeOutBounce", // Tipo de easing (opcional)
+        easing: "easeInOutQuad", // Tipo de easing (opcional)
       },
     },
 
@@ -75,41 +75,44 @@ export default {
 
       const ctx = this.$refs.myChart.getContext("2d");
       this.chart = new Chart(ctx, {
-        type: this.type,
-        data: {
-          labels: this.headers,
-          datasets: this.data,
-        },
-        options: {
-          scales: {
-            xAxes: [
-              {
-                gridLines: {
-                  color: this.lineColor, // Color de las líneas del eje x
-                },
-                ticks: {
-                  fontColor: this.textColor, // Color del texto en el eje x
-                },
-              },
-            ],
-            yAxes: [
-              {
-                gridLines: {
-                  color: this.lineColor, // Color de las líneas del eje y
-                },
-                ticks: {
-                  fontColor: this.textColor, // Color del texto en el eje y
-                },
-              },
-            ],
+          type: this.type,
+          data: {
+            labels: this.headers,
+            datasets: this.data,
           },
-          legend: {
-            labels: {
-              fontColor: this.textColor, // Color del texto en la leyenda
+          options: {
+            scales: {
+              xAxes: [
+                {
+                  gridLines: {
+                    color: this.lineColor,
+                  },
+                  ticks: {
+                    fontColor: this.textColor,
+                  },
+                },
+              ],
+              yAxes: [
+                {
+                  gridLines: {
+                    color: this.lineColor,
+                  },
+                  ticks: {
+                    fontColor: this.textColor,
+                  },
+                },
+              ],
+            },
+            legend: {
+              labels: {
+                fontColor: this.textColor,
+              },
+            },
+            animation: {
+              duration: 0, // Desactiva las animaciones estableciendo la duración en 0
             },
           },
-        },
-      });
+        });
     },
   },
 };

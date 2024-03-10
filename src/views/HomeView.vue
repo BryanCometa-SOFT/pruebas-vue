@@ -814,42 +814,7 @@ select:focus {
   }
 }
    
-/* Tooltip CSS3 */
-.tooltip-css3:before {
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 20px solid #777777;
-  bottom: -15px;
-  content: "";
-  height: 0;
-  left: 50%;
-  margin-left: -8px; /* Ajusta el valor para centrar el triángulo */
-  position: absolute;
-  transform: skew(-45deg);
-  width: 0;
-}
 
-.tooltip-css3 {
-  background-color: #777777;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-  color: #FFFFFF;
-  display: none;
-  padding: 20px 30px;
-  position: absolute;
-  top: -80px;
-  left: 50%;
-  transform: translateX(-50%); /* Centrar el tooltip horizontalmente */
-  z-index: 999; /* Asegurar que el tooltip esté encima de otros elementos */
-}
 
-/* Contenedor del Tooltip */
-.container-tooltip {
-  cursor: pointer;
-  position: relative;
-}
 
-/* Mostrando los tooltips */
-.container-tooltip:hover .tooltip-css3 {
-  display: block;
-}
 </style>

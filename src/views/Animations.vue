@@ -11,6 +11,8 @@
             </div>
         </div>
 
+        <button @class="tooltip()">prueba2 </button>
+
         <div class="mt-5 animate__animated animate__backInDown">
           <img src="@/assets/profile.png" alt="" srcset="">
         </div>
@@ -27,17 +29,51 @@
             <span class="animate__animated animate__infinite animate__backInDown">Animación infinita</span>
           </div>
           
+        </div>
 
-         
+        <div class="col-12 d-flex justify-content-around">
+          <TooltipComponent
+            logo="../assets/logo.png"
+            text="Hola mundo este es todo mi texto completo"
+            position="top"
+            width="120px"
+          />
+
+             <TooltipComponent
+            logo="../assets/logo.png"
+            text="Hola mundo este es todo mi texto completo"
+            position="bottom"
+            width="120px"
+          />
+
+             <TooltipComponent
+            logo="../assets/logo.png"
+            text="Hola mundo este es todo mi texto completo"
+            position="left"
+            width="120px"
+          />
+             <TooltipComponent
+            logo="../assets/logo.png"
+            text="Hola mundo este es todo mi texto completo"
+            position="right"
+            width="120px"
+          />
+
+        </div>  
+
+        <div class="col-12 mt-5">
+         'top', 'bottom', 'left', 'right'
         </div>
         
     </div>
   </template>
   
   <script>
+  import TooltipComponent from '../components/TooltipComponent.vue'
 
   
   export default {
+    components: {TooltipComponent},
     data() {
       return {
         chart: null,
@@ -47,6 +83,14 @@
 
     },
     methods: {
+      tooltip(){
+        this.$toast.add({
+          severity: "warn",
+          summary: "Tarea pendiente",
+          detail:" Los jefes de cobranza han sido bloqueados \n No ha ejecutado la tarea: ${element.area} ${element.type_document_debtor}. ${element.identification_debtor} - ${element.name_debtor}",
+          life: 30000,
+        });
+      }
     },
   };
   </script>
